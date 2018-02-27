@@ -1,0 +1,12 @@
+package: podstatus
+import:
+- package: github.com/emicklei/go-restful
+- package: k8s.io/client-go
+  subpackages:
+  - kubernetes
+  - pkg/api/unversioned
+  - pkg/api/v1
+  - tools/clientcmd
+- package: k8s.io/kubernetes
+  subpackages:
+  - pkg/api/meta
